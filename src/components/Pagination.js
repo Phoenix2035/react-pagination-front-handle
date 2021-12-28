@@ -88,14 +88,12 @@ const Pagination = () => {
         setItemsPerPage(itemsPerPage + 5)
     }
 
-    
+
     return (
         <>
             <h1>Todo List</h1> <br />
 
-            {
-                renderData(currentItems)
-            }
+            {renderData(currentItems)}
             <ul className="pageNumbers">
                 <li>
                     <button onClick={handlePrevBtn} disabled={currentPage === pages[0]}>
